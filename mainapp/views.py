@@ -146,9 +146,11 @@ class RegSuccess(TemplateView):
 class SubmissionSuccess(TemplateView):
     template_name = "mainapp/submission_success.html"
 
-class Stats(TemplateView):
-    template_name = "mainapp/stats.html"
+class StatsRequests(TemplateView):
+    template_name = "mainapp/stats_requests.html"
 
+class StatsVolunteers(TemplateView):
+    template_name = "mainapp/stats_volunteers.html"
 
 class ContribSuccess(TemplateView):
     template_name = "mainapp/contrib_success.html"

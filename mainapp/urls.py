@@ -39,5 +39,6 @@ urlpatterns = [
     path('announcements/', views.announcements, name="Announcements"),
     path('camp_requirements/', views.camp_requirements_list, name='camp_requirements_list'),
     path('submission_success/', views.SubmissionSuccess.as_view(), name='submission_success'),
-    path('stats/', views.Stats.as_view(), name='stats'),
+    path('stats/requests', views.StatsRequests.as_view(), name='stats_requests'),
+    path('stats/volunteers', views.StatsVolunteers.as_view(), name='stats_volunteers'),
 ]
